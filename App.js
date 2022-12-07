@@ -17,45 +17,29 @@ const Flex = () => {
           rounded
           source={{
             uri:
-              'https://cdn-icons-png.flaticon.com/512/6681/6681204.png',
+              'https://static.vecteezy.com/system/resources/thumbnails/007/033/146/small_2x/profile-icon-login-head-icon-vector.jpg',
           }}
         />
       </View>
       <View style={styles.container}>
-        <Input
-          label="Login"
-          labelStyle={{fontSize: 18}}
+        <Text style={{fontSize: 30}}>Login</Text>
+        <TextInput
           style={styles.input}
-          leftIcon={
-            <Icon
-              name='user'
-              size={24}
-              color='#6278f4'
-            />
-          }
         />
-        <Input
-          label="Senha"
-          labelStyle={{fontSize: 18}}
+        <Text style={{fontSize: 30}}>Senha</Text>
+        <TextInput
           style={styles.input}
-          leftIcon= {
-            <Icon
-              name="lock"
-              size={24}
-              color='#6278f4'
-            />
-          }
           secureTextEntry={true}
         />
       </View>
       <View style={styles.container}>
           <Button 
-            buttonStyle={{backgroundColor: '#46c7fc', height:50}}
+            buttonStyle={{backgroundColor: '#0088ff', height:50}}
             title="Login"
             titleStyle={{fontSize: 25}}
           />
           <Button 
-            buttonStyle={{backgroundColor:'#724af4', height:50}}
+            buttonStyle={{backgroundColor:'#ff0000', height:50}}
             title="Cadastre-se"
             titleStyle={{fontSize: 25}}
           />
@@ -69,10 +53,14 @@ const styles = StyleSheet.create({
     flex: 2,
     gap: 10,
     padding: 20,
+    backgroundColor: '#ffffdd'
   },
   input: {
+    height: 50,
+    borderWidth: 1,
     paddingLeft: 10,
     fontSize: 15,
+    backgroundColor: '#fff'
   },
   avatar: {
     flex: 2, 
